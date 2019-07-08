@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+        
+        .wheel {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        
+        .wheel {
+            animation: move 3s linear infinite;
+        }
+        
+        @keyframes move {
+            100% {
+                transform: translateX(500px) rotate(859.4deg);
+            }
+        }
+        
+        .space {
+            border-bottom: 2px solid #fff;
+        }
+    </style>
+    <title>css3动画效果</title>
+</head>
+
+<body>
+    <div class="space">
+        <div class="wheel">
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class="space">
+        <div class="wheel">
+            <span class="line"></span>
+        </div>
+    </div>
+</body>
+
+</html>
